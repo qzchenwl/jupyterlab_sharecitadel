@@ -1,5 +1,5 @@
 {
-  "name": "jupyterlab_sharecitadel",
+  "name": "@qzchenwl/jupyterlab_sharecitadel",
   "version": "0.1.0",
   "description": "A JupyterLab extension.",
   "keywords": [
@@ -7,12 +7,12 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "ssh://git@git.sankuai.com/ia/phx-data-jupyterhub.git",
+  "homepage": "https://github.com/qzchenwl/jupyterlab_sharecitadel",
   "bugs": {
-    "url": "ssh://git@git.sankuai.com/ia/phx-data-jupyterhub.git/issues"
+    "url": "https://github.com/qzchenwl/jupyterlab_sharecitadel/issues"
   },
   "license": "BSD-3-Clause",
-  "author": "陈文龙",
+  "author": "qzchenwl",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
@@ -21,7 +21,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.sankuai.com/ia/phx-data-jupyterhub.git.git"
+    "url": "https://github.com/qzchenwl/jupyterlab_sharecitadel"
   },
   "scripts": {
     "build": "tsc",
