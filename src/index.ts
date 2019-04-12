@@ -105,7 +105,7 @@ namespace Private {
         tooltip: '共享到学城'
       });
 
-      panel.toolbar.insertItem(panel.toolbar.children.length, 'runAll', button);
+      panel.toolbar.insertItem(0, 'shareCitadel', button);
 
       return new DisposableDelegate(() => {
         button.dispose();
