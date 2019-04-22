@@ -62,11 +62,11 @@ namespace Private {
           if (!result.button.accept) {
             return;
           }
-          // TODO: do job
+
           const url = URLExt.join(serverSettings.baseUrl, 'meituan/share-citadel')
           const body = JSON.stringify({ path });
           const { context } = current;
-          
+
           ((context.model.dirty && !context.model.readOnly) ? context.save() : Promise.resolve())
           .then(() => ServerConnection.makeRequest(url, {method: 'POST', body}, serverSettings))
           .then(response => {
@@ -76,7 +76,9 @@ namespace Private {
             return response.json();
           })
           .then(result => showDialog({title: '分享成功', body: result.pageUrl}))
-          .catch(reason => showDialog({title: '分享失败', body: JSON.stringify(reason)}))
+          .catch(err => {
+              err.response.json().then((r:any) => showDialog({title: '分享失败', body: r.message}));
+          })
         });
       }
     });
