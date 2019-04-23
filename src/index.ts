@@ -75,7 +75,7 @@ namespace Private {
             }
             return response.json();
           })
-          .then(result => showDialog({title: '分享成功', body: result.pageUrl}))
+          .then(result => window.open(result.pageUrl, '_blank'))
           .catch(err => {
               err.response.json().then((r:any) => showDialog({title: '分享失败', body: r.message}));
           })

@@ -1,6 +1,6 @@
 {
   "name": "@qzchenwl/jupyterlab_sharecitadel",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "A JupyterLab extension.",
   "keywords": [
     "jupyter",
