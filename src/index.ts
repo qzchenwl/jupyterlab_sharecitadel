@@ -63,7 +63,7 @@ namespace Private {
             return;
           }
 
-          const url = URLExt.join(serverSettings.baseUrl, 'meituan/share-citadel')
+          const url = URLExt.join(serverSettings.baseUrl, 'api/meituan/share-citadel')
           const body = JSON.stringify({ path });
           const { context } = current;
 
